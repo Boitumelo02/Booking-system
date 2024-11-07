@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Bar Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book Your Appointment</h2>
+        <form action="submit_appointment.php" method="post" class="appointment-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Appointment Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Choose a Service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="facial">Lashes and Eyebrows</option>
+                    <option value="massage">Massage Therapy</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
